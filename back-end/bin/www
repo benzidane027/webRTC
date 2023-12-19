@@ -16,12 +16,9 @@ var server = http.createServer(app);
 const wss = new WebSocketServer.WebSocketServer ({ server });
 
 wss.on('connection', ws_api.connection);
-wss.on("close",(e)=>{
+wss.on("close",ws_api.close)
+wss.on("error",ws_api.error)
 
-})
-wss.on("error",(e)=>{
-
-})
 /**
  * Listen on provided port, on all network interfaces.
  */

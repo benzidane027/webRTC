@@ -24,8 +24,9 @@ function App() {
     iceServers: [
       {
         urls: [
-          "stun:stun1.l.google.com:19302",
-          "stun:stun2.l.google.com:19302",
+         // "stun:stun1.l.google.com:19302",
+         // "stun:stun2.l.google.com:19302",
+         "stun:192.168.0.30:3478"
         ],
       },
     ],
@@ -146,7 +147,7 @@ function App() {
       <div style={{ display: "flex" }}>
         <div style={{ width: "500px" }}>
           <video
-            playsinline
+
             autoPlay
             id="sourceCaller"
             width={400}
@@ -156,7 +157,7 @@ function App() {
         </div>
         <div>
           <video
-            playsinline
+
             autoPlay
             id="remoteCaller"
             width={400}

@@ -11,8 +11,17 @@
 
         var so = new WebSocket("ws://localhost:3000");
         so.onopen=function(e){
-            so.send(JSON.stringify({hello:"hi hi"}))
+            so.send(JSON.stringify({id:2}))
         }
+        so.onmessage=function (e){
+          console.log("recive data from server")
+          console.log(e.data)
+        }
+        so.close=function (e){
+          console.log("server shutdown")
+          console.log(e.data)
+        }
+
     </script>
   </body>
 </html>
