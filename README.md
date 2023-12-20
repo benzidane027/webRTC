@@ -4,5 +4,4 @@
      <li>install node js</li>
      <li>insta node module for back-end and front-end</li>
      <li>install stun sever from link below: <a href="https://medium.com/av-transcode/what-is-webrtc-and-how-to-setup-stun-turn-server-for-webrtc-communication-63314728b9d0"> go</a></li>
-
     </ul>
